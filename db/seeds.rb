@@ -5,3 +5,23 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+# champions = Champion.create([
+#   {name: 'Aurelion Sol'},
+#   {name: 'Twisted Fate'},
+#   {name: 'Graves'},
+#   {name: 'Gnar'}
+# ])
+
+10.times do
+  champions = Champion.create([
+    { name: Faker::Name.name }
+  ])
+end
+
+10.times do
+  items = Item.create([
+    { name: Faker::Zelda.character }
+  ])
+end

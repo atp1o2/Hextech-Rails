@@ -1,5 +1,5 @@
 FactoryGirl.define do
   factory :champion do
-    name { Faker::Lorem.name }
+    name { Faker::Name.name }
   end
 end
